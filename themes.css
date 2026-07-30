@@ -1,0 +1,154 @@
+/**
+ * Themes CSS - Paletas de colores para la invitación digital XV
+ * Uso: Agregar clase theme-classic-gold, theme-modern-minimal, etc. al elemento body
+ */
+
+/* ============================================
+ * PALETA: CLASSIC GOLD
+ * Elegancia atemporal y sofisticación
+ * ============================================ */
+
+.theme-classic-gold {
+  /* Colores principales */
+  --color-primary: #D4AF37;
+  --color-secondary: #FAF9F6;
+  --color-accent: #1A1A1A;
+
+  /* Fondos */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-alt: #FDF8F0;
+  --color-bg-overlay: rgba(0, 0, 0, 0.3);
+
+  /* Textos */
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #6B6B6B;
+  --color-text-inverse: #FFFFFF;
+
+  /* Estados */
+  --color-button: #D4AF37;
+  --color-button-hover: #B8962F;
+  --color-border: #E8E4DE;
+
+  /* Efectos */
+  --shadow-color: rgba(212, 175, 55, 0.2);
+  --gradient-start: #FDF8F0;
+  --gradient-end: #FFFFFF;
+}
+
+/* ============================================
+ * PALETA: MODERN MINIMAL
+ * Diseños limpios y contemporáneos
+ * ============================================ */
+
+.theme-modern-minimal {
+  /* Colores principales */
+  --color-primary: #4A5D4A;
+  --color-secondary: #F5F5F5;
+  --color-accent: #C9A962;
+
+  /* Fondos */
+  --color-bg-primary: #FAFAFA;
+  --color-bg-alt: #E8E8E8;
+  --color-bg-overlay: rgba(0, 0, 0, 0.25);
+
+  /* Textos */
+  --color-text-primary: #333333;
+  --color-text-secondary: #888888;
+  --color-text-inverse: #FFFFFF;
+
+  /* Estados */
+  --color-button: #4A5D4A;
+  --color-button-hover: #3D4D3D;
+  --color-border: #D0D0D0;
+
+  /* Efectos */
+  --shadow-color: rgba(74, 93, 74, 0.15);
+  --gradient-start: #FAFAFA;
+  --gradient-end: #F0F0F0;
+}
+
+/* ============================================
+ * PALETA: ROMANTIC BLUSH
+ * Tonos suaves y femeninos
+ * ============================================ */
+
+.theme-romantic-blush {
+  /* Colores principales */
+  --color-primary: #ffffff;
+  --color-secondary: #dfdde0;
+  --color-accent: #D4AF37;
+
+  /* Fondos */
+  --color-bg-primary: #520202f8;
+  --color-bg-alt: #860b06f8;
+  --color-bg-overlay: rgba(74, 58, 58, 0.25);
+
+  /* Textos */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #ebe3e3;
+  --color-text-inverse: #FFFFFF;
+
+  /* Estados */
+  --color-button: #ac4545;
+  --color-button-hover: #b15c5c;
+  --color-border: #D4AF37;
+
+  /* Efectos */
+  --shadow-color: rgba(184, 139, 139, 0.2);
+  --gradient-start: #FFF9F5;
+  --gradient-end: #FDF2F2;
+}
+
+/* ============================================
+ * PALETA: NAVY NIGHT
+ * Elegancia nocturna con profundidad
+ * ============================================ */
+
+.theme-navy-night {
+  /* Colores principales */
+  --color-primary: #1E3A5F;
+  --color-secondary: #C0C0C0;
+  --color-accent: #D4AF37;
+
+  /* Fondos */
+  --color-bg-primary: #0F1825;
+  --color-bg-alt: #162232;
+  --color-bg-overlay: rgba(0, 0, 0, 0.4);
+
+  /* Textos */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B0B0;
+  --color-text-inverse: #0F1825;
+
+  /* Estados */
+  --color-button: #1E3A5F;
+  --color-button-hover: #2A4A73;
+  --color-border: #2A3D52;
+
+  /* Efectos */
+  --shadow-color: rgba(30, 58, 95, 0.3);
+  --gradient-start: #162232;
+  --gradient-end: #0F1825;
+}
+
+/* ============================================
+ * CLASES UTILITARIAS POR TEMA
+ * ============================================ */
+
+/* Textos decorativos con color primario */
+.theme-classic-gold .text-decorative { color: var(--color-primary); }
+.theme-modern-minimal .text-decorative { color: var(--color-primary); }
+.theme-romantic-blush .text-decorative { color: var(--color-accent); }
+.theme-navy-night .text-decorative { color: var(--color-accent); }
+
+/* Fondos alternativos */
+.theme-classic-gold .bg-alt { background-color: var(--color-bg-alt); }
+.theme-modern-minimal .bg-alt { background-color: var(--color-bg-alt); }
+.theme-romantic-blush .bg-alt { background-color: var(--color-bg-alt); }
+.theme-navy-night .bg-alt { background-color: var(--color-bg-alt); }
+
+/* Bordes decorativos */
+.theme-classic-gold .border-decorative { border-color: var(--color-primary); }
+.theme-modern-minimal .border-decorative { border-color: var(--color-accent); }
+.theme-romantic-blush .border-decorative { border-color: var(--color-accent); }
+.theme-navy-night .border-decorative { border-color: var(--color-accent); }

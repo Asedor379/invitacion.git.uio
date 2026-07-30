@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+         <!-- Open Graph para WhatsApp y redes sociales -->
+
+        <!-- Favicon -->
+
+         <!-- Título -->
+        <title>Mis 15 Años - [Nombre de la festejante]</title>
+
+
+        <link rel="stylesheet" href="themes.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="base.css">
+    </head>
+
+    <body class="theme-romantic-blush">
+          <header class="header">
+            <div class="header_content">
+            <button class="header_music-toggle" aria-label="Activar o desactivar música">
+                <svg class="icon-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+                </svg>
+                <span class="music-status">♪ Música</span>
+            </button>
+            </div>
+        </header>
+
+        <main>
+        <!-- HERO / PORTADA -->
+        <section class="hero" id="hero">
+        <div class="hero_overlay"></div>
+        <div class="hero_content container">
+            <span class="hero_subtitle">¡Mis XV Años!</span>
+            <h1 class="hero_title">[Nombre de la festejante]</h1>
+            <span class="hero_event"></span>
+            <p class="hero_date"></p>
+            <div class="hero_actions">
+            <button class="btn btn--primary hero_btn hero_btn--music" id="open-with-music" aria-label="Abrir invitación con música">
+                <svg class="hero_btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+                </svg>
+                Con música
+            </button>
+            <button class="btn btn--secondary hero_btn hero_btn--no-music" id="open-without-music" aria-label="Abrir invitación sin música">
+                <svg class="hero_btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 9v6"/>
+                <path d="M4 9h12"/>
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                </svg>
+                Sin música
+            </button>
+            </div>
+        </div>
+        </section>
+
+        <!-- CUENTA REGRESIVA -->
+        <section class="countdown" id="countdown">
+            <div class="container">
+                <h2 class="section_title">La cuenta regresiva</h2>
+                <div class="countdown_timer">
+                <div class="countdown_block">
+                    <span class="countdown_number" id="days">00</span>
+                    <span class="countdown_label">Días</span>
+                </div>
+                <div class="countdown_block">
+                    <span class="countdown_number" id="hours">00</span>
+                    <span class="countdown_label">Horas</span>
+                </div>
+                <div class="countdown_block">
+                    <span class="countdown_number" id="minutes">00</span>
+                    <span class="countdown_label">Minutos</span>
+                </div>
+                <div class="countdown_block">
+                    <span class="countdown_number" id="seconds">00</span>
+                    <span class="countdown_label">Segundos</span>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENSAJE DE INVITACIÓN -->
+        <section class="message" id="message">
+        <div class="container">
+            <p class="message_text">
+            Quiero que seas parte de una noche inolvidable
+            </p>
+            <p class="message_subtext">
+            Será un honor celebrar contigo esta noche mágica
+            </p>
+        </div>
+        </section>
+
+        <!-- CUANDO (FECHA Y HORA) -->
+        <section class="when" id="when">
+        <div class="container">
+            <h2 class="section_title">Cuando</h2>
+            <div class="when_content">
+            <div class="when_icon">
+                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="calendar-icon">
+                    <path d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="when_details">
+                <p class="when_date">Domingo 15 de Junio de 2026</p>
+                <!----------<p class="when_time">20:00 hs</p>--->
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- DONDE (UBICACIÓN) -->
+        <section class="where" id="where">
+        <div class="container">
+            <h2 class="section_title">Donde</h2>
+            <div class="where_content">
+            <div class="where_icon">
+                <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" class="ubi_icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path stroke="#ffff" stroke-width="12" d="M96 22a51.88 51.88 0 0 0-36.77 15.303A52.368 52.368 0 0 0 44 74.246c0 16.596 4.296 28.669 20.811 48.898a163.733 163.733 0 0 1 20.053 28.38C90.852 163.721 90.146 172 96 172c5.854 0 5.148-8.279 11.136-20.476a163.723 163.723 0 0 1 20.053-28.38C143.704 102.915 148 90.841 148 74.246a52.37 52.37 0 0 0-15.23-36.943A51.88 51.88 0 0 0 96 22Z"></path><circle cx="96" cy="74" r="20" stroke="#ffff" stroke-width="12"></circle></g>
+                </svg>
+            </div>
+            <div class="where_details">
+                <p class="where_salon">Salón San Lorenzo</p>
+                <p class="where_address">Av.Juan De la Barrera 5</p>
+            </div>
+            <a href="https://maps.app.goo.gl/NVoXWSKpbkJmjHVm6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary where__btn">
+                Ver ubicación
+            </a>
+            </div>
+        </div>
+        </section>
+
+            <!-- DONDE (UBICACIÓN2) -->
+        <section class="where" id="where">
+        <div class="container">
+            <h2 class="section_title">Iglesia</h2>
+            <div class="where_content">
+            <div class="where_icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ubi2_icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0002 8L8.79795 9.5611C8.14576 9.87904 7.81967 10.038 7.58124 10.278C7.37041 10.4903 7.20988 10.7471 7.11148 11.0297C7.0002 11.3492 7.0002 11.7119 7.0002 12.4375V21H17.0002V12.4375C17.0002 11.7119 17.0002 11.3492 16.8889 11.0297C16.7905 10.7471 16.63 10.4903 16.4192 10.278C16.1807 10.038 15.8546 9.87904 15.2024 9.5611L12.0002 8ZM12.0002 8V3M14.0002 5H10.0002M7.0002 13L4.76897 14.1156C4.12683 14.4366 3.80576 14.5971 3.57118 14.8366C3.36374 15.0484 3.20598 15.3037 3.10931 15.5839C3 15.9009 3 16.2598 3 16.9778V21H21V16.9777C21 16.2598 21 15.9008 20.8907 15.5839C20.794 15.3037 20.6363 15.0484 20.4289 14.8366C20.1943 14.5971 19.8732 14.4366 19.2311 14.1155L17.0002 13M14.0002 21V17C14.0002 15.8954 13.1048 15 12.0002 15C10.8956 15 10.0002 15.8954 10.0002 17V21H14.0002Z" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path> 
+                </g></svg>
+            </div>
+            <div class="where_details">
+                <p class="where_church">Parroquia de San Lorenzo</p>
+                <p class="where_address_church">Av.Central 5, San Lorenzo</p>
+            </div>
+            <a href="https://maps.app.goo.gl/QKc11EPARztqD1cs7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary where__btn2">
+                Ver ubicación
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <!-- DRESS CODE -->
+        <section class="dresscode" id="dresscode">
+        <div class="container">
+            <h2 class="section_title"> Dress Code</h2>
+            <div class="dresscode_content">
+            <div class="dresscode_icon">
+              <svg fill="#ffff" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.955 291.955" xml:space="preserve" class="dree_icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> 
+                <path d="M230.473,0.021L60.748,0L4.874,55.873v236.082h282.207V55.041L230.473,0.021z M158.042,91.081l71.27-71.269l39.008,37.911 l-71.817,71.819L158.042,91.081z M171.489,125.741l-24.053,48.922l-24.053-48.922l24.053-24.053L171.489,125.741z M147.436,80.474 L81.965,15.002L212.89,15.02L147.436,80.474z M63.854,18.106l72.975,72.975l-38.461,38.461L25.394,56.566L63.854,18.106z M19.874,72.261l78.494,78.494l13.808-13.808l26.902,54.715l-41.937,85.294H19.874V72.261z M147.436,208.66l33.579,68.295h-67.158 L147.436,208.66z M197.73,276.955l-41.937-85.294l26.902-54.715l13.808,13.808l75.578-75.578v201.778H197.73V276.955z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g>
+             </svg>
+            </div>
+            <p class="dresscode_text">Formal</p>
+            <p class="dresscode_desc">Traje de gala - No jeans ni sandals</p>
+            </div>
+        </div>
+        </section>
+
+        
+
+        <!-- ITINERARIO -->
+        <section class="itinerary" id="itinerary">
+        <div class="container">
+            <h2 class="section_title">Itinerario</h2>
+            <div class="itinerary_timeline">
+            <div class="itinerary_item">
+                <span class="itinerary_time">20:00</span>
+                <div class="itinerary_dot"></div>
+                <div class="itinerary_details">
+                <p class="itinerary_activity">Recepción</p>
+                <p class="itinerary_location">Entrada principal</p>
+                </div>
+            </div>
+            <div class="itinerary_item">
+                <span class="itinerary_time">21:00</span>
+                <div class="itinerary_dot"></div>
+                <div class="itinerary_details">
+                <p class="itinerary_activity">Cena</p>
+                <p class="itinerary_location">Salón principal</p>
+                </div>
+            </div>
+            <div class="itinerary_item">
+                <span class="itinerary_time">22:30</span>
+                <div class="itinerary_dot"></div>
+                <div class="itinerary_details">
+                <p class="itinerary_activity">Pastel</p>
+                <p class="itinerary_location">Salón principal</p>
+                </div>
+            </div>
+            <div class="itinerary_item">
+                <span class="itinerary_time">23:00</span>
+                <div class="itinerary_dot"></div>
+                <div class="itinerary_details">
+                <p class="itinerary_activity">Baile</p>
+                <p class="itinerary_location">Salón principal</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- MESA DE REGALOS -->
+        <section class="gifts" id="gifts">
+        <div class="container">
+            <h2 class="section_title">Opciones de Regalo</h2>
+            <div class="gifts_content">
+            <p class="gifts_text">mi mejor regalo es compartir contigo este gran dia si deseas regalarme algo estoy segura que me encantara</p>
+            <div class="gifts_img">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="gift_icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                    <path d="M12 8V21M12 8H7.5C6.83696 8 6.20107 7.73661 5.73223 7.26777C5.26339 6.79893 5 6.16304 5 5.5C5 4.83696 5.26339 4.20107 5.73223 3.73223C6.20107 3.26339 6.83696 3 7.5 3C11 3 12 8 12 8ZM12 8H16.5C17.163 8 17.7989 7.73661 18.2678 7.26777C18.7366 6.79893 19 6.16304 19 5.5C19 4.83696 18.7366 4.20107 18.2678 3.73223C17.7989 3.26339 17.163 3 16.5 3C13 3 12 8 12 8ZM3 14H21M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V11.2C21 10.0799 21 9.51984 20.782 9.09202C20.5903 8.71569 20.2843 8.40973 19.908 8.21799C19.4802 8 18.9201 8 17.8 8H6.2C5.0799 8 4.51984 8 4.09202 8.21799C3.71569 8.40973 3.40973 8.71569 3.21799 9.09202C3 9.51984 3 10.0799 3 11.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                </svg>
+             </div>
+             <p class="gifts_text_2">O si deseas darme algun presente </p>
+               <a href="https://www.sears.com.mx/Mesa-de-Regalos/270195/Te-invito-a-mi-XV-A%C3%B1os---Amanda-Ayde"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary">
+                REGALOS
+               </a>
+            </div>
+        </div>
+        </section>
+
+        <!-- HASHTAG -->
+        <section class="hashtag" id="hashtag">
+        <div class="container">
+            <h2 class="section_title">Comparte tus fotos</h2>
+            <p class="hashtag_text">Usa el hashtag</p>
+            <p class="hashtag_tag">#XVNombre</p>
+        </div>
+        </section>
+
+        <!-- PLAYLIST -->
+        <section class="playlist" id="playlist">
+        <div class="container">
+            <h2 class="section_title">Playlist</h2>
+            <p class="playlist_text">¿Qué canción no puede faltar?</p>
+            <a href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--secondary playlist_btn">
+            Sugiere una canción
+            </a>
+        </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="gallery" id="gallery" aria-label="Galería de fotos">
+        <div class="container">
+            <h2 class="section_title">Galería</h2>
+            <div class="gallery_carousel" role="region" aria-label="Carrusel de fotos">
+            <div class="gallery_track" id="gallery-track">
+                <div class="gallery_slide">
+                <img src="f1.jpg" alt="Foto 1 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="f2.jpg" alt="Foto 2 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="f3.jpg" alt="Foto 3 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="espera.jpg" alt="Foto 4 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="331.jpeg" alt="Foto 5 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="332.jpeg" alt="Foto 6 de la festejante" loading="lazy">
+                </div>
+                <div class="gallery_slide">
+                <img src="333.jpg" alt="Foto 7 de la festejante" loading="lazy">
+                </div>
+            </div>
+            <div class="gallery_controls">
+                <button class="gallery_arrow gallery_arrow--prev" aria-label="Foto anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+                </button>
+                <button class="gallery_arrow gallery_arrow--next" aria-label="Foto siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"/>
+                </svg>
+                </button>
+            </div>
+            <div class="gallery_dots" role="tablist" aria-label="Navegación de fotos">
+                <button class="gallery_dot gallery_dot--active" role="tab" aria-selected="true" aria-label="Ver foto 1"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 2"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 3"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 4"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 5"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 6"></button>
+                <button class="gallery_dot" role="tab" aria-selected="false" aria-label="Ver foto 7"></button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- INFORMACIÓN (PRECIOS) -->
+        <section class="info" id="info">
+         <div class="container">
+            <h2 class="section_title">Menciones Especiales</h2>
+            <div class="info_content">
+                <p class="text_info">hay momentos inolvidales que se atesoran en el corazon para siempre,por esa razon,quiero compartir este dia tan especial al lado de mis seres amados y con la bendicion de dios en compañia de: </p>
+                <p class="text_info2">
+                    <ol class="lista-ordenada">
+                        <li>Victoria Portilla Zermeño</li>
+                        <li>Gerardo Valverde jimenez</li>
+                    </ol>
+                </p>
+                <p class="text_info3">¡Y la persona a quien mas amo!</p>
+                <p>
+                    <ol class="lista-ordenada">
+                        <li>Barbara Daniela Lopez Portilla</li>
+                    </ol>
+                </p>
+            </div>
+         </div>
+        </section>
+
+        <!-- CONFIRMACIÓN -->
+        <section class="rsvp" id="rsvp">
+        <div class="container">
+            <h2 class="section_title">Confirmar Asistencia</h2>
+            <p class="rsvp_text">Por favor, confirma tu asistencia antes del 1 de Junio</p>
+            <a href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary rsvp_btn">
+            Confirmar asistencia
+            </a>
+        </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+        FOOTER
+        ============================================ -->
+        <!-- CONFIRMACIÓN -->
+    <section class="rsvpp" id="rsvpp">
+        <div class="container">
+            <h2 class="section_title">Dedicatoria</h2>
+            <p class="rsvpp_text">!Gracias por ser parte de uno de los mejores dias de mi vida¡</p>
+            <p class="rsvpp_text_1">con cariño:</p>
+            <p class="rsvpp_text_2">Ayde</p>
+
+        </div>
+    </section>
+
+    <!-- Audio element para la música -->
+    <audio id="audio-player" loop>
+        <source src="musi.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+    <script>
+    // =============================================
+    // ===== JAVASCRIPT PARA TU CARRUSEL =====
+    // =============================================
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.getElementById('gallery-track');
+        const slides = track.querySelectorAll('.gallery_slide');
+        const dots = document.querySelectorAll('.gallery_dot');
+        const prevBtn = document.querySelector('.gallery_arrow--prev');
+        const nextBtn = document.querySelector('.gallery_arrow--next');
+        const totalSlides = slides.length;
+        
+        let currentIndex = 0;
+        let isTransitioning = false;
+        let autoPlayInterval = null;
+        const AUTO_PLAY_DELAY = 4000; // 4 segundos
+
+        // =============================================
+        // 1. LAZY LOADING CON INTERSECTION OBSERVER
+        // =============================================
+        
+        function setupLazyLoading() {
+        const images = document.querySelectorAll('.gallery_slide img');
+        
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                const src = img.getAttribute('src');
+                
+                // Si ya tiene src y no está cargado, marcarlo como cargado
+                if (src && !img.classList.contains('loaded')) {
+                // Crear imagen temporal para asegurar carga
+                const tempImg = new Image();
+                tempImg.src = src;
+                tempImg.onload = () => {
+                    img.classList.add('loaded');
+                    img.style.opacity = '1';
+                };
+                tempImg.onerror = () => {
+                    // Si falla, mostrar placeholder
+                    img.style.opacity = '1';
+                    img.classList.add('loaded');
+                };
+                }
+            }
+            });
+        }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+        });
+        
+        images.forEach(img => imageObserver.observe(img));
+        
+        // Cargar la primera imagen inmediatamente
+        const firstImg = images[0];
+        if (firstImg) {
+            const tempImg = new Image();
+            tempImg.src = firstImg.getAttribute('src');
+            tempImg.onload = () => {
+            firstImg.classList.add('loaded');
+            firstImg.style.opacity = '1';
+            };
+        }
+        }
+
+        // =============================================
+        // 2. FUNCIONES DEL CARRUSEL
+        // =============================================
+
+        function goToSlide(index) {
+        if (isTransitioning || index === currentIndex) return;
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        
+        isTransitioning = true;
+        currentIndex = index;
+        
+        // Mover el track
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Actualizar dots
+        dots.forEach((dot, i) => {
+            const isActive = i === currentIndex;
+            dot.classList.toggle('gallery_dot--active', isActive);
+            dot.setAttribute('aria-selected', isActive);
+        });
+        
+        // Lazy loading: precargar imágenes cercanas
+        preloadNearbyImages();
+        
+        setTimeout(() => {
+            isTransitioning = false;
+        }, 500);
+        }
+
+        function nextSlide() {
+        goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+        goToSlide(currentIndex - 1);
+        }
+
+        // =============================================
+        // 3. PRECARGAR IMÁGENES CERCANAS
+        // =============================================
+
+        function preloadNearbyImages() {
+        const images = document.querySelectorAll('.gallery_slide img');
+        const indicesToPreload = [
+            currentIndex,
+            (currentIndex + 1) % totalSlides,
+            (currentIndex - 1 + totalSlides) % totalSlides,
+            (currentIndex + 2) % totalSlides,
+            (currentIndex - 2 + totalSlides) % totalSlides
+        ];
+        
+        indicesToPreload.forEach(index => {
+            const img = images[index];
+            if (img && !img.classList.contains('loaded')) {
+            const src = img.getAttribute('src');
+            if (src) {
+                const tempImg = new Image();
+                tempImg.src = src;
+                tempImg.onload = () => {
+                img.classList.add('loaded');
+                img.style.opacity = '1';
+                };
+            }
+            }
+        });
+        }
+
+        // =============================================
+        // 4. AUTO-PLAY
+        // =============================================
+
+        function startAutoPlay() {
+        if (autoPlayInterval) clearInterval(autoPlayInterval);
+        autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_DELAY);
+        }
+
+        function stopAutoPlay() {
+        if (autoPlayInterval) {
+            clearInterval(autoPlayInterval);
+            autoPlayInterval = null;
+        }
+        }
+
+        function resetAutoPlay() {
+        stopAutoPlay();
+        startAutoPlay();
+        }
+
+        // =============================================
+        // 5. EVENT LISTENERS
+        // =============================================
+
+        // Botones
+        prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+        });
+
+        nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+        });
+
+        // Dots
+        dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            resetAutoPlay();
+        });
+        });
+
+        // Pausar auto-play en hover
+        const carousel = document.querySelector('.gallery_carousel');
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+
+        // Touch/Swipe para móviles
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoPlay();
+        });
+
+        carousel.addEventListener('touchmove', (e) => {
+        e.preventDefault(); // Prevenir scroll mientras se desliza
+        }, { passive: false });
+
+        carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > 50) { // Umbral mínimo de deslizamiento
+            if (diff > 0) {
+            nextSlide();
+            } else {
+            prevSlide();
+            }
+            resetAutoPlay();
+        } else {
+            startAutoPlay();
+        }
+        });
+
+        // Teclado (accesibilidad)
+        document.addEventListener('keydown', (e) => {
+        if (!carousel.contains(document.activeElement)) return;
+        
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+            resetAutoPlay();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+            resetAutoPlay();
+        }
+        });
+
+        // =============================================
+        // 6. INICIALIZAR
+        // =============================================
+
+        // Iniciar lazy loading
+        setupLazyLoading();
+        
+        // Precargar primeras imágenes
+        setTimeout(preloadNearbyImages, 100);
+        
+        // Iniciar auto-play
+        startAutoPlay();
+        
+        console.log('🚀 Carrusel inicializado correctamente');
+        console.log(`📸 ${totalSlides} imágenes en la galería`);
+    });
+    </script>
+    </body>
+</html>
