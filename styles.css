@@ -909,6 +909,8 @@
 .hashtag {
   background-image: url('fondo.png');
   padding: var(--space-3xl) 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .hashtag_text {
@@ -917,33 +919,53 @@
   color: var(--color-text-secondary);
   text-align: center;
   margin-bottom: var(--space-md);
+  word-break: break-word;
 }
-
-
-@keyframes pulseColor {
-    0% {
-        transform: scale(1);
-        color: #ff6b6b;
-    }
-    50% {
-        transform: scale(1.1);
-        color: #ff0000;
-    }
-    100% {
-        transform: scale(1);
-        color: #ff6b6b;
-    }
-}
-
 
 .hashtag_tag {
   font-family: var(--font-heading);
-  font-size: 500%;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: var(--fw-semibold);
   color: var(--color-primary);
   text-align: center;
   animation: pulseColor 1.5s ease-in-out infinite;
-  
+  display: inline-flexbox;
+  max-width: 100%;
+  padding: 0 15px;
+  word-break: break-word;
+  transform-origin: center; /* La animación escala desde el centro */
+}
+
+/* Animación ajustada - sin cambio de tamaño */
+@keyframes pulseColor {
+  0% {
+    color: #ff6b6b;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    color: #ff0000;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    color: #ff6b6b;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+  }
+}
+
+/* O versión con escala pero sin desbordar */
+@keyframes pulseColor {
+  0% {
+    transform: scale(1);
+    color: #ff6b6b;
+  }
+  50% {
+    transform: scale(1.05);
+    color: #ff0000;
+  }
+  100% {
+    transform: scale(1);
+    color: #ff6b6b;
+  }
 }
 
 /* ============================================
@@ -986,222 +1008,90 @@
 /* ============================================
  * FOOTER
  * ============================================ */
-
+/* Estilos base */
 .rsvpp {
-  background-image: url('fondo.png');
-  padding: var(--space-3xl) 0;
-  text-align: center;
+  padding: 60px 20px;
+  background-image: url(fondo.png);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Título con animación de entrada */
-.section_title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsivo */
-  color: #fff;
-  margin-bottom: 30px;
-  opacity: 0;
-  animation: fadeInUp 1.5s ease forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ANIMACIONES DE TYPING - Versión Responsive */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes typingMobile {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #ff0000; }
-}
-
-/* ANIMACIÓN DE NEÓN ROJO */
-@keyframes neonRedPulse {
-  0%, 100% {
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #ff0000,
-      0 0 82px #ff0000,
-      0 0 92px #ff0000,
-      0 0 102px #ff0000,
-      0 0 151px #ff0000;
-  }
-  50% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 7px #fff,
-      0 0 14px #fff,
-      0 0 28px #ff0000,
-      0 0 54px #ff0000,
-      0 0 61px #ff0000,
-      0 0 68px #ff0000,
-      0 0 100px #ff0000;
-  }
-}
-
-/* PRIMER TEXTO - Responsive */
-.rsvpp_text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsivo */
-  color: #fff;
-  overflow: hidden;
+.rsvpp .container {
+  max-width: 900px;
   margin: 0 auto;
-  width: 0;
-  animation: 
-    typing 5s steps(50) forwards,
-    blink 0.75s step-end infinite;
-  display: inline-block;
-  white-space: nowrap;
+  text-align: center;
+  width: 100%;
 }
 
-/* SEGUNDO TEXTO - Responsive */
-.rsvpp_text_1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-  color: #ccc;
-  overflow: hidden;
-  margin: 10px auto;
-  width: 0;
-  animation: 
-    typing 3.5s steps(20) forwards,
-    blink 0.95s step-end infinite;
-  display: inline-block;
-  animation-delay: 5.5s;
-  white-space: nowrap;
-}
-
-/* TERCER TEXTO - Amanda Ayde (Responsive) */
-.rsvpp_text_2 {
-  font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 8vw, 4rem); /* Responsivo */
+.section_title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #ecf0f1;
+  margin-bottom: 30px;
   font-weight: 700;
-  color: #fff;
-  overflow: hidden;
-  margin: 10px auto;
-  width: 0;
-  animation: 
-    typing 4s steps(15) forwards,
-    blink 0.75s step-end infinite;
-  display: inline-block;
-  animation-delay: 9.5s;
-  white-space: nowrap;
 }
 
-/* Cuando termina el typing, se activa el neón */
-.rsvpp_text_2.typed {
-  animation: neonRedPulse 2.5s ease-in-out infinite alternate;
-  border-right: none;
-  width: auto !important;
+.rsvpp_text {
+  font-family: var(--font-cursive);
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
+  color: #f1c40f;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 95%;
+  word-wrap: break-word;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
 }
 
-/* ========== RESPONSIVE ========== */
-
-/* Tablets y móviles grandes */
-@media (max-width: 992px) {
-  .rsvpp_text_2 {
-    font-size: clamp(2rem, 6vw, 3rem);
-  }
+.rsvpp_text_1 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #bdc3c7;
+  margin: 30px 0 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-/* Móviles */
-@media (max-width: 768px) {
+.rsvpp_text_2 {
+  font-family: var(--font-cursive);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: #ecf0f1;
+  font-weight: 700;
+}
+
+/* Media queries para ajustes de espaciado */
+@media screen and (max-width: 768px) {
   .rsvpp {
-    padding: 40px 20px;
+    padding: 40px 15px;
+    min-height: 80vh;
+  }
+  
+  .rsvpp_text {
+    padding: 15px;
+    border-radius: 8px;
   }
   
   .section_title {
-    font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 20px;
-  }
-  
-  /* Ajustar tiempos de typing en móviles */
-  .rsvpp_text {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    animation: 
-      typing 4s steps(40) forwards,
-      blink 0.75s step-end infinite;
-  }
-  
-  .rsvpp_text_1 {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    animation: 
-      typing 2.8s steps(15) forwards,
-      blink 0.95s step-end infinite;
-    animation-delay: 4.5s;
-  }
-  
-  .rsvpp_text_2 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    animation: 
-      typing 3.2s steps(12) forwards,
-      blink 0.75s step-end infinite;
-    animation-delay: 7.8s;
-  }
-  
-  /* Ajustar el neón para móviles */
-  @keyframes neonRedPulseMobile {
-    0%, 100% {
-      text-shadow:
-        0 0 5px #fff,
-        0 0 8px #fff,
-        0 0 15px #fff,
-        0 0 25px #ff0000,
-        0 0 50px #ff0000,
-        0 0 60px #ff0000;
-    }
-    50% {
-      text-shadow:
-        0 0 3px #fff,
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 18px #ff0000,
-        0 0 35px #ff0000,
-        0 0 45px #ff0000;
-    }
-  }
-  
-  .rsvpp_text_2.typed {
-    animation: neonRedPulseMobile 2.5s ease-in-out infinite alternate;
   }
 }
 
-/* Móviles muy pequeños */
-@media (max-width: 480px) {
-  .rsvpp_text_2 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    animation: 
-      typing 2.8s steps(10) forwards,
-      blink 0.75s step-end infinite;
-    animation-delay: 6.5s;
+@media screen and (max-width: 380px) {
+  .rsvpp {
+    padding: 30px 10px;
+    min-height: 70vh;
   }
   
   .rsvpp_text {
-    font-size: clamp(0.8rem, 2vw, 0.95rem);
-    animation: 
-      typing 3.5s steps(30) forwards,
-      blink 0.75s step-end infinite;
+    padding: 12px 10px;
+    border-radius: 6px;
   }
   
   .rsvpp_text_1 {
-    font-size: clamp(0.7rem, 1.8vw, 0.85rem);
-    animation-delay: 4s;
+    letter-spacing: 2px;
+    margin-top: 20px;
   }
 }
 
